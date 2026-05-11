@@ -4,13 +4,11 @@ on:
   push:
     paths:
       - "data/sample/**.csv"
+  workflow_dispatch:
 
 jobs:
   retrain:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: backend
 
     steps:
       - name: Checkout code
@@ -22,23 +20,26 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
+        working-directory: backend
         run: |
           pip install --upgrade pip
           pip install -r requirements.docker.txt
 
       - name: List files
+        working-directory: backend
         run: |
           pwd
           ls -la scripts/
 
       - name: Run retraining script
+        working-directory: backend
         run: python scripts/retrain.py
         env:
           MLFLOW_TRACKING_URI: file:./mlruns
           MLFLOW_EXPERIMENT_NAME: ml-pipeline
           REGISTERED_MODEL_NAME: best-classifier
-          OPTUNA_TRIALS: 5
-          RANDOM_SEED: 42
+          OPTUNA_TRIALS: "5"
+          RANDOM_SEED: "42"
 
       - name: Upload training report
         uses: actions/upload-artifact@v4
