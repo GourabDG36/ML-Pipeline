@@ -1,0 +1,255 @@
+2026-05-01T11:03:34.347211+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-01T11:03:34.347573+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-01T11:05:00.862317+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-01T11:05:19.764027+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-01T11:05:19.764341+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-01T11:05:40.527320+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-01T11:07:00.638352+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-01T11:07:00.638709+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-01T11:08:12.652832+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-02T09:59:49.983144+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-02T09:59:49.998568+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-02T10:01:20.746012+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-02T10:02:36.085796+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-02T10:02:36.086171+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-02T10:03:21.403412+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\ab7271d4-a8fd-4b41-b2c9-4d1a0c1c4d0c\data.csv
+2026-05-02T10:04:49.921648+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-02T10:04:49.922943+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-02T10:10:50.949867+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-02T10:10:53.968235+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-02T10:10:53.968548+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-02T10:10:54.079216+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-02T10:14:09.935529+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-02T10:14:09.935921+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-02T10:14:43.955873+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\2f0087b1-b322-4af3-829f-228143415dc4\data.csv
+2026-05-02T10:15:13.548129+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-02T10:15:13.548873+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-02T10:15:45.137065+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-02T10:15:45.137876+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-02T10:15:45.265487+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-02T10:15:45.266380+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-02T10:15:45.285329+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-02T10:15:45.293935+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-02T10:15:45.297282+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\2f0087b1-b322-4af3-829f-228143415dc4
+2026-05-02T10:15:45.399708+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-02T10:15:45.913050+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-02T10:15:56.751138+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-02T10:15:56.754064+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-02T10:15:57.086930+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-02T10:16:01.212350+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-02T10:16:01.214281+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-02T10:16:02.701075+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-02T10:16:06.909502+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-02T10:16:06.911634+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-02T10:16:07.046944+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-02T10:16:11.496039+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-02T10:16:11.497969+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-02T10:16:11.498312+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-02T10:16:11.657000+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 9.573366757813385, 'solver': 'lbfgs'}
+2026-05-02T10:16:11.679845+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 1.0, 'f1': 1.0, 'precision': 1.0, 'recall': 1.0, 'roc_auc': 1.0}
+2026-05-02T10:25:40.180509+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:23:46.095631+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:23:46.106106+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:25:13.938267+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\06572937-bb0c-4b70-bfd1-418f1eca7d2c\data.csv
+2026-05-03T10:26:15.187140+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-03T10:26:15.187965+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-03T10:26:15.247806+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-03T10:26:15.248407+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-03T10:26:15.277793+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-03T10:26:15.285906+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-03T10:26:15.288628+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\06572937-bb0c-4b70-bfd1-418f1eca7d2c
+2026-05-03T10:26:15.404311+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-03T10:26:15.954091+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-03T10:26:39.099513+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-03T10:26:39.101984+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-03T10:26:39.437796+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-03T10:26:43.961998+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-03T10:26:43.964957+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-03T10:26:44.357399+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-03T10:26:49.105094+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-03T10:26:49.107061+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-03T10:26:49.425336+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-03T10:26:53.851663+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-03T10:26:53.853988+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-03T10:26:53.854294+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-03T10:26:53.988860+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 2.204627245446768, 'solver': 'saga'}
+2026-05-03T10:26:54.003843+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 1.0}
+2026-05-03T10:27:27.464611+0530 | INFO | app.ml.predictor:load_latest_model:33 | Loaded model from registry: models:/best-classifier/latest
+2026-05-03T10:27:27.713043+0530 | WARNING | app.ml.predictor:compute_shap_values:133 | SHAP computation failed: index 0 is out of bounds for axis 0 with size 0
+2026-05-03T10:28:41.382028+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:28:46.527880+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:28:46.528212+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:29:02.588078+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\d95225bb-1183-45ac-bfae-e1b00b16141d\data.csv
+2026-05-03T10:29:22.099669+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-03T10:29:22.100244+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-03T10:29:22.101128+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-03T10:29:22.101676+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-03T10:29:22.103437+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-03T10:29:22.110172+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-03T10:29:22.113431+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\d95225bb-1183-45ac-bfae-e1b00b16141d
+2026-05-03T10:29:22.147775+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-03T10:29:22.430553+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-03T10:29:39.622598+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-03T10:29:39.625023+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-03T10:29:39.944482+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-03T10:29:44.390927+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-03T10:29:44.393004+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-03T10:29:44.619826+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-03T10:29:48.812112+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-03T10:29:48.814197+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-03T10:29:48.925698+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-03T10:29:53.334680+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-03T10:29:53.337463+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-03T10:29:53.337768+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-03T10:29:53.464728+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 2.492709421940215, 'solver': 'saga'}
+2026-05-03T10:29:53.478547+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 1.0}
+2026-05-03T10:30:18.268642+0530 | INFO | app.ml.predictor:load_latest_model:33 | Loaded model from registry: models:/best-classifier/latest
+2026-05-03T10:31:24.778142+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:31:30.799897+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:31:30.800206+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:32:40.677895+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:32:45.428252+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:32:45.428594+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:32:45.543661+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:33:15.983818+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:33:15.984126+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:33:26.522800+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\f9e90126-2b8b-4d8f-a853-8a2cf857237d\data.csv
+2026-05-03T10:33:27.385851+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\b790a293-cda5-4cae-b9bc-270a11f80bf3\data.csv
+2026-05-03T10:33:47.398052+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-03T10:33:47.398734+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-03T10:33:47.399844+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-03T10:33:47.400590+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-03T10:33:47.402517+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-03T10:33:47.409389+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-03T10:33:47.412564+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\b790a293-cda5-4cae-b9bc-270a11f80bf3
+2026-05-03T10:33:47.427195+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-03T10:33:47.690478+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-03T10:33:53.173577+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-03T10:33:53.175953+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-03T10:33:53.482519+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-03T10:33:57.850891+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-03T10:33:57.852850+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-03T10:33:58.054555+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-03T10:34:02.313229+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-03T10:34:02.315718+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-03T10:34:02.435779+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-03T10:34:06.948861+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-03T10:34:06.950988+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-03T10:34:06.951231+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-03T10:34:07.091517+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 6.164467204559265, 'solver': 'lbfgs'}
+2026-05-03T10:34:07.113945+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 1.0}
+2026-05-03T10:34:26.683272+0530 | INFO | app.ml.predictor:load_latest_model:33 | Loaded model from registry: models:/best-classifier/latest
+2026-05-03T10:34:26.686900+0530 | INFO | app.ml.predictor:compute_shap_values:98 | Raw SHAP values: [0. 0. 0. 0.]
+2026-05-03T10:38:30.574110+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:38:36.365867+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:38:36.366194+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:38:36.476559+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:38:41.797791+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:38:41.798117+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:38:58.002951+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:39:03.328312+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:39:03.328669+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:39:31.231890+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:39:36.615526+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:39:36.615912+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:40:06.719716+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:40:11.470101+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:40:11.470479+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:40:13.209473+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-03T10:40:18.286064+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-03T10:40:18.286399+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-03T10:40:27.427312+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\afe541c2-0ed9-408f-aa46-3ec5fb67d651\data.csv
+2026-05-03T10:40:47.612783+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-03T10:40:47.614170+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-03T10:40:47.615323+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-03T10:40:47.615978+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-03T10:40:47.618061+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-03T10:40:47.625332+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-03T10:40:47.628465+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\afe541c2-0ed9-408f-aa46-3ec5fb67d651
+2026-05-03T10:40:47.629590+0530 | INFO | app.ml.preprocessing.pipeline:save_training_data:158 | Training data saved for SHAP background
+2026-05-03T10:40:47.642751+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-03T10:40:47.890381+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-03T10:40:52.615789+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-03T10:40:52.619219+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-03T10:40:52.900192+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-03T10:40:57.098377+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-03T10:40:57.100496+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-03T10:40:57.293059+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-03T10:41:01.578761+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-03T10:41:01.581499+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-03T10:41:01.672146+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-03T10:41:06.106078+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-03T10:41:06.108119+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-03T10:41:06.108436+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-03T10:41:06.227067+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 1.8133073788640062, 'solver': 'saga'}
+2026-05-03T10:41:06.240051+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 0.9966666666666667}
+2026-05-03T10:41:41.857394+0530 | INFO | app.ml.predictor:load_latest_model:33 | Loaded model from registry: models:/best-classifier/latest
+2026-05-03T10:41:41.869182+0530 | INFO | app.ml.predictor:compute_shap_values:106 | SHAP array shape: (1, 4, 3)
+2026-05-03T10:41:41.869456+0530 | INFO | app.ml.predictor:compute_shap_values:125 | Sample SHAP: [0.79980939 0.84276054 2.40479139 2.78571776]
+2026-05-03T10:42:38.575028+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-04T19:15:29.079341+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-04T19:15:29.098441+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-04T19:17:00.999513+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\2b79bc6a-475c-48fd-abb2-2242eb6ee056\data.csv
+2026-05-04T19:17:28.160187+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-04T19:17:28.161224+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-04T19:17:28.196810+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-04T19:17:28.197765+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-04T19:17:28.226370+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-04T19:17:28.235652+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-04T19:17:28.238511+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\2b79bc6a-475c-48fd-abb2-2242eb6ee056
+2026-05-04T19:17:28.239822+0530 | INFO | app.ml.preprocessing.pipeline:save_training_data:158 | Training data saved for SHAP background
+2026-05-04T19:17:28.346628+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-04T19:17:28.925940+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-04T19:17:51.992306+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-04T19:17:51.994569+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-04T19:17:52.325386+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-04T19:17:56.741255+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-04T19:17:56.743386+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-04T19:17:57.218758+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-04T19:18:01.732644+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-04T19:18:01.734856+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-04T19:18:01.893500+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-04T19:18:06.059223+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-04T19:18:06.061931+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-04T19:18:06.062285+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-04T19:18:06.227257+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 2.2117598023318856, 'solver': 'saga'}
+2026-05-04T19:18:06.241034+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 1.0}
+2026-05-04T19:18:29.625208+0530 | INFO | app.ml.predictor:load_latest_model:33 | Loaded model from registry: models:/best-classifier/latest
+2026-05-04T19:18:29.637041+0530 | INFO | app.ml.predictor:compute_shap_values:106 | SHAP array shape: (1, 4, 3)
+2026-05-04T19:18:29.637316+0530 | INFO | app.ml.predictor:compute_shap_values:125 | Sample SHAP: [0.75070635 0.86642359 2.40587479 2.77965036]
+2026-05-04T19:18:49.337247+0530 | ERROR | app.api.routes.monitor:drift_report:81 | Drift report failed: No module named 'evidently.report'
+2026-05-04T19:22:30.257944+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-04T19:23:00.592723+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-04T19:23:00.593080+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-04T19:23:33.165123+0530 | INFO | app.monitoring.drift:compute_drift_report:48 | Computing drift: 150 reference rows vs 2 current rows
+2026-05-04T19:25:06.899165+0530 | INFO | app.monitoring.drift:compute_drift_report:48 | Computing drift: 150 reference rows vs 10 current rows
+2026-05-04T19:27:27.662584+0530 | INFO | app.main:lifespan:15 | Shutting down
+2026-05-05T09:35:00.649876+0530 | INFO | app.core.logging:setup_logging:44 | Logging initialized at level: INFO
+2026-05-05T09:35:00.657533+0530 | INFO | app.main:lifespan:13 | Starting ML Pipeline API
+2026-05-05T09:35:12.206043+0530 | INFO | app.api.routes.upload:upload_csv:79 | File uploaded: iris.csv -> D:\my projects\mini_project\ml-pipeline\backend\data\uploads\6bbfbc14-be21-462b-b1bd-9d7f73ac3ab6\data.csv
+2026-05-05T09:35:34.123824+0530 | INFO | app.ml.preprocessing.validator:validate_dataset:125 | Dataset validation passed. 150 rows, 4 features, 3 classes
+2026-05-05T09:35:34.124914+0530 | INFO | app.ml.preprocessing.detector:detect_column_types:76 | Column detection complete. Numerical: 4, Categorical: 0, Dropped: 0
+2026-05-05T09:35:34.182117+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:99 | Preparing data: 150 samples, 4 features
+2026-05-05T09:35:34.183261+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:105 | Target classes: ['setosa', 'versicolor', 'virginica']
+2026-05-05T09:35:34.212515+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:116 | Train size: 120, Test size: 30
+2026-05-05T09:35:34.220303+0530 | INFO | app.ml.preprocessing.pipeline:prepare_data:123 | Preprocessing complete. Feature shape: (120, 4) -> (120, 4)
+2026-05-05T09:35:34.223559+0530 | INFO | app.ml.preprocessing.pipeline:save_preprocessor:146 | Preprocessor saved to D:\my projects\mini_project\ml-pipeline\backend\data\uploads\6bbfbc14-be21-462b-b1bd-9d7f73ac3ab6
+2026-05-05T09:35:34.225035+0530 | INFO | app.ml.preprocessing.pipeline:save_training_data:158 | Training data saved for SHAP background
+2026-05-05T09:35:34.339277+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: logistic_regression
+2026-05-05T09:35:34.932910+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.9966666666666667}
+2026-05-05T09:36:00.378500+0530 | INFO | app.ml.trainer:train_all_models:75 | logistic_regression -> F1: 0.9333
+2026-05-05T09:36:00.380628+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: random_forest
+2026-05-05T09:36:00.712765+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9933333333333333}
+2026-05-05T09:36:05.114810+0530 | INFO | app.ml.trainer:train_all_models:75 | random_forest -> F1: 0.8997
+2026-05-05T09:36:05.117022+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: xgboost
+2026-05-05T09:36:05.573577+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9333333333333333, 'f1': 0.9333333333333332, 'precision': 0.9333333333333332, 'recall': 0.9333333333333332, 'roc_auc': 0.965}
+2026-05-05T09:36:10.057056+0530 | INFO | app.ml.trainer:train_all_models:75 | xgboost -> F1: 0.9333
+2026-05-05T09:36:10.059195+0530 | INFO | app.ml.trainer:train_all_models:46 | Training: lightgbm
+2026-05-05T09:36:10.287113+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9, 'f1': 0.899749373433584, 'precision': 0.9023569023569024, 'recall': 0.9, 'roc_auc': 0.9633333333333333}
+2026-05-05T09:36:14.816583+0530 | INFO | app.ml.trainer:train_all_models:75 | lightgbm -> F1: 0.8997
+2026-05-05T09:36:14.818734+0530 | INFO | app.ml.trainer:train_all_models:83 | Best model: logistic_regression with F1: 0.9333
+2026-05-05T09:36:14.819042+0530 | INFO | app.ml.trainer:train_all_models:86 | Starting Optuna tuning for: logistic_regression
+2026-05-05T09:36:14.948276+0530 | INFO | app.ml.trainer:tune_best_model:188 | Best Optuna params: {'C': 4.0302444159236925, 'solver': 'saga'}
+2026-05-05T09:36:14.963861+0530 | INFO | app.ml.evaluation.metrics:evaluate_model:54 | Metrics: {'accuracy': 0.9666666666666667, 'f1': 0.9665831244778612, 'precision': 0.9696969696969697, 'recall': 0.9666666666666667, 'roc_auc': 1.0}
+2026-05-05T09:36:44.946193+0530 | INFO | app.monitoring.drift:compute_drift_report:48 | Computing drift: 150 reference rows vs 2 current rows
+2026-05-05T09:37:24.328437+0530 | INFO | app.monitoring.drift:compute_drift_report:48 | Computing drift: 150 reference rows vs 10 current rows

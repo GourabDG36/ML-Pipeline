@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables — NEVER commit these
+.env
+*.env.local
+
+# MLflow artifacts (can be huge)
+backend/mlruns/
+backend/mlartifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Docker volumes
+*.db
+*.sqlite
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Uploaded data (user files, not committed)
+data/uploads/

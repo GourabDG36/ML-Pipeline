@@ -1,0 +1,35 @@
+# Web framework
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+
+# ML core
+scikit-learn==1.8.0
+xgboost==3.0.2
+lightgbm==4.6.0
+pandas==3.0.2
+numpy==2.2.5
+joblib==1.4.2
+
+# MLflow tracking
+mlflow==2.22.0
+
+# Hyperparameter tuning
+optuna==4.3.0
+
+# Explainability
+shap==0.47.2
+
+# Drift monitoring
+evidently==0.6.7
+
+# Testing
+pytest==8.3.5
+pytest-asyncio==0.26.0
+httpx==0.28.1
+
+# Utilities
+pydantic==2.11.4
+pydantic-settings==2.9.1
+python-dotenv==1.1.0
+loguru==0.7.3

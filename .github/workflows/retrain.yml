@@ -1,0 +1,42 @@
+name: Retrain on New Data
+
+on:
+  push:
+    paths:
+      - "data/sample/**.csv"   # only triggers when CSV files change
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install --upgrade pip
+          pip install -r requirements.docker.txt
+
+      - name: Run retraining script
+        run: |
+          cd backend
+          python scripts/retrain.py
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+          MLFLOW_EXPERIMENT_NAME: ml-pipeline
+          REGISTERED_MODEL_NAME: best-classifier
+          OPTUNA_TRIALS: 5
+          RANDOM_SEED: 42
+
+      - name: Upload training report
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-report
+          path: backend/training_report.json
