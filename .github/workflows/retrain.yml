@@ -26,6 +26,8 @@ jobs:
 
       - name: Run retraining script
         run: |
+          pwd
+          ls -la backend/scripts/
           cd backend
           python scripts/retrain.py
         env:
